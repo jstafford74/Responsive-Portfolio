@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.container {
+  width:100%;
+  display:grid;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: 240px 240px 240px; 
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-content: center;	
+}
+
+
+div.polaroid:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%px;
+  height: 100%px;
+}
+
+
+
+div.polaroid {
+  /* width: 80%; */
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.desc {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="container">
+        <div class="polaroid">
+            <img src="assets/images/bluesky1.jpg" alt="Blue Sky" width="100%" height="100%">
+            <div class="desc">Blue Sky</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="assets/images/IMG_1171.jpg") alt="Moon" width="100%" height="100%";>
+            <div class="desc">Close up of Moon</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="assets/images/IMG_0842.jpg" alt="Alta Utah" width="100%" height="100%">
+            <div class="desc">Alta Utah</div>
+        </div>
+        <div class="polaroid">
+            <img src="assets/images/Flag Rotate.jpg" alt="Mountains" width="100%" height="100%">
+            <div class="desc">Park City</div>
+        </div>
+        <div class="polaroid">
+            <img src="assets/images/cloud.jpg" alt="Mountains" width="100%" height="100%">
+            <div class="desc">Clouds</div>
+        </div>
+        <div class="polaroid">
+            <img src="assets/images/bright sun.jpg" alt="Beach Sun" width="100%" height="100%">
+            <div class="desc">Beach Sun</div>
+        </div>
+        <div class="polaroid">
+            <img src="assets/images/Full Moon Sunset.jpg" alt="Full Moon Sunset" width="100%" height="100%">
+            <div class="desc">Full Moon Sunset</div>
+        </div>
+        <div class="polaroid">
+                <img src="assets/images/IMG_0946.jpg" alt="Rainbow" width="100%" height="100%">
+                <div class="desc">Hawaiin Rainbow</div>
+            </div>
+
+            <div class="polaroid">
+                    <img src="assets/images/reflection.jpg" alt="Sunset Reflection" width="100%" height="100%">
+                    <div class="desc">Sunset Reflection</div>
+                </div>
+    </div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+
+</body>
+</html>
