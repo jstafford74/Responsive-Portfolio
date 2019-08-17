@@ -1,267 +1,278 @@
 <!DOCTYPE html>
 <html>
-<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <style>
-    * {
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    body {
-      margin: 0;
-      width:1260px;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+  * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-    header{
-        border-bottom: .5px solid #cccccc;
-        background-color:#ffffff;
-        padding:0;
-        width:62%;
-        margin-left:13%;
-        height:100px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        float:left;
-        font-size:.8em;
-    }
+  body {
+    margin: 0;
+    width: 1260px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-    ul{
-        width:400px;
-        height:50px;
-        list-style-type: none;
-        margin-top:40px;
-        background-color:#ffffff;
-        float:right;
+  header {
+    border-bottom: .5px solid #cccccc;
+    background-color: #ffffff;
+    padding: 0;
+    width: 62%;
+    margin-left: 13%;
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    font-size: .8em;
+  }
 
-    }
+  ul {
+    width: 400px;
+    height: 50px;
+    list-style-type: none;
+    margin-top: 40px;
+    background-color: #ffffff;
+    float: right;
 
-    li{
-        width: 100px;
-        height: 25px;
-        color:silver;
-        border: 0;
-        padding-top: 10;
-        margin-left:5px;
-        text-align:center;
-        background-color:#ffffff;
-        float:right;
+  }
 
-    }
-    strong{
-        background-color:#ffffff;
-    }
-    h2{
-        color:#4aaaa5;
-        width:100%;
-        padding:0;
-        border-bottom:1px solid gray;
-        margin:0;
+  li {
+    width: 100px;
+    height: 25px;
+    color: silver;
+    border: 0;
+    padding-top: 10;
+    margin-left: 5px;
+    text-align: center;
+    background-color: #ffffff;
+    float: right;
 
-    }
+  }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
+  strong {
+    background-color: #ffffff;
+  }
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-  color:#ccc;
-}
-
-input[type=submit] {
-  background-color: #4aaaa5;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: left;
-}
-
-input[type=submit]:hover {
-  background-color: #4aaaa5;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #ffffff;
-  padding: 20px;
-  width:62%;
-  margin-left:13%;
-  margin-top:10%;
-  /* border:1px solid black; */
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  /* align-items:flex-start; */
-}
-
-.col-25 {
-  /* float: left; */
-  /* clear:right; */
-  width: 15%;
-  /* margin-top: 6px; */
-}
-
-.col-75 {
-  /* float: left; */
-  width: 100%;
-  /* margin-top: 6px; */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  h2 {
+    color: #4aaaa5;
     width: 100%;
+    padding: 0;
+    border-bottom: 1px solid gray;
+    margin: 0;
+
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #ccc;
+  }
+
+  input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+
+  input[type=submit]:hover {
+    background-color: #4aaaa5;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 62%;
+    margin-left: 13%;
+    margin-top: 10%;
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items:flex-start; */
+  }
+
+  .col-25 {
+    /* float: left; */
+    /* clear:right; */
+    width: 15%;
+    /* margin-top: 6px; */
+  }
+
+  .col-75 {
+    /* float: left; */
+    width: 100%;
+    /* margin-top: 6px; */
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the content */
+  .content {
+    background-color: #ffffff;
+    width: 76%;
+    margin-left: 8%;
+    height: 800px;
+  }
+
+
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+  #urname {
+    width: 25%;
+    height: 65px;
+    background-color: #4aaaa5;
+    margin-top: 50px;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: bold;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    margin-top: -15px;
+
+  }
+
+  .flex-item {
+    /* flex: 1 0 10px; */
+    order: 1;
+    background-color: #ffffff;
+    margin-top: 26px;
+    margin-bottom: 0px;
+  }
+
+  .push {
+    margin-left: auto;
     margin-top: 0;
   }
-}
 
-    /* Style the top navigation bar */
-    .topnav {
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    /* Style the topnav links */
-    .topnav a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    /* Change color on hover */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    /* Style the content */
-    .content {
-      background-color: #ffffff;
-      width:76%;
-      margin-left:8%;
-      height: 800px; 
-    }
-    
-    
-    .footer {
-        background-color: #f1f1f1;
-        padding: 10px;
-    }
+  #form1 {
+    margin-top: 0;
+    margin-left: 0;
+  }
+</style>
 
-    #urname{
-        width: 25%;
-        height:65px;
-        background-color: #4aaaa5;
-        margin-top:50px;
-        color: #ffffff;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-style:bold;
-        text-align:center;
-        font-size: 1.5em;
-        padding: 20px;
-    }
-
-    .flex-container {
-        display: flex;                
-        flex-flow: row nowrap;
-        align-items:flex-end;
-        margin-top:-15px;
-  
-    }
-    .flex-item {
-        /* flex: 1 0 10px; */
-        order:1;
-        background-color:#ffffff;
-        margin-top:26px;
-        margin-bottom:0px;
-    }
-
-    .push {
-        margin-left: auto;
-        margin-top: 0;
-    }
-    #form1{
-        margin-top:0;
-        margin-left:0;
-    }
-  </style>  
 <head>
 
-    <!-- Don't forget to look into these concepts:
+  <!-- Don't forget to look into these concepts:
          float, padding, margin, display, overflow, clear and text-align. -->
-    
-    <meta charset="UTF-8">
-    <title>Contact</title>
-    </head>
-    <header class="flex-container">
-        <div id="urname">Jeremiah Stafford</div>
-        <ul class="flex-item push">
-            <li><strong>Contact</strong></li>
-            <li><strong>| Portfolio | </strong></li>
-            <li><strong>About</strong></li>
-          </ul>
-        </div>
 
-    </header>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+</head>
+<header id="masthead">
+  <div class="container">
+    <a href="index.html" id="logo">Jeremiah Stafford</a>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
 <body>
-<!-- <div> -->
+  <!-- <div> -->
 
 
 
-<div class="container">
-<h2>Contact</h2>
-<div id="form1">
-  <form action="/action_page.php">
-  <div class="row">
-    <div class="col-25">
-      <label for="name">Name</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="name" name="name" placeholder="John Smith">
+  <div class="container">
+    <h2>Contact</h2>
+    <div id="form1">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="name" placeholder="John Smith">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="email" placeholder="example@gmail.com">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Message</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="message" style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
     </div>
   </div>
-  
-  <div class="row">
-    <div class="col-25">
-      <label for="email">Email</label>
-    </div>
-    <div class="col-75">
-        <input type="text" id="name" name="email" placeholder="example@gmail.com">
-        
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="subject">Message</label>
-    </div>
-    <div class="col-75">
-      <textarea id="subject" name="message"  style="height:200px"></textarea>
-    </div>
-  </div>
-  <div class="row">
-    <input type="submit" value="Submit">
-  </div>
-  </form>
-</div>
-</div>
 
 </body>
+
 </html>
